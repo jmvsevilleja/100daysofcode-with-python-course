@@ -17,7 +17,6 @@ todaydate = date.today()
 
 todaydate
 #datetime.date(2018, 2, 19)
-print(todaydate)
 type(todaydate)
 # <class 'datetime.date'>
 
@@ -31,7 +30,7 @@ todaydate.day
 # 19
 
 
-christmas = date(todaydate.year, 1, 8)
+christmas = date(todaydate.year, 12, 25)
 christmas
 #datetime.date(2018, 12, 25)
 
