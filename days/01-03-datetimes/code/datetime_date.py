@@ -10,32 +10,33 @@ today = datetime.today()
 
 
 type(today)
-#<class 'datetime.datetime'>
+# <class 'datetime.datetime'>
 
 
 todaydate = date.today()
 
 todaydate
 #datetime.date(2018, 2, 19)
-
+print(todaydate)
 type(todaydate)
-#<class 'datetime.date'>
+# <class 'datetime.date'>
 
 todaydate.month
-#2
+# 2
 
 todaydate.year
-#2018
+# 2018
 
 todaydate.day
-#19
+# 19
 
 
-christmas = date(2018, 12, 25)
+christmas = date(todaydate.year, 1, 8)
 christmas
 #datetime.date(2018, 12, 25)
 
 if christmas is not todaydate:
-    print("Sorry there are still " + str((christmas - todaydate).days) + " until Christmas!")
+    print("Sorry there are still " +
+          str((christmas - todaydate).days) + " day/s until Christmas!")
 else:
     print("Yay it's Christmas!")
